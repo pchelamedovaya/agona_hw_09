@@ -1,0 +1,26 @@
+main {
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	background: #5c6f87;
+	width: 50%;
+	max-width: 400px;
+	min-width: 250px;
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+	padding: 50px 30px 80px;
+	margin-top: 50px;
+	box-shadow: 0 18px 30px #2d3845;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 20px;
+	font-family: SemiboldFont, serif;
+	font-size: 26px;
+	color: #ffffff;
+}

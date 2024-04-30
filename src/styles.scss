@@ -1,0 +1,18 @@
+@font-face {
+	font-family: 'RegularFont';
+	src: url('./assets/fonts/Inter-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SemiboldFont';
+	src: url('./assets/fonts/Inter-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+::selection {
+	background-color: #ffffff50;
+	color: #4a607a;
+}

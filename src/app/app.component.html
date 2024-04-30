@@ -1,0 +1,35 @@
+<main>
+	<div class="container">
+		<div class="title">CurrencyConvert App</div>
+		<app-input
+			sign="₽"
+			countryFlag="fi fi-ru"
+			[value]="values['ruValue']"
+			(valueChange)="updateValues($event)"
+		></app-input>
+		<app-input
+			sign="$"
+			countryFlag="fi fi-us"
+			[value]="values['usValue']"
+			(valueChange)="updateValues($event)"
+		></app-input>
+		<app-input
+			sign="¥"
+			countryFlag="fi fi-jp"
+			[value]="values['jpValue']"
+			(valueChange)="updateValues($event)"
+		></app-input>
+		<app-input
+			sign="₹"
+			countryFlag="fi fi-in"
+			[value]="values['inValue']"
+			(valueChange)="updateValues($event)"
+		></app-input>
+		<app-input
+			sign="₣"
+			countryFlag="fi fi-ch"
+			[value]="values['chValue']"
+			(valueChange)="updateValues($event)"
+		></app-input>
+	</div>
+</main>
