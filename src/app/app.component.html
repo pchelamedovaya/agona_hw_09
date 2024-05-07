@@ -1,35 +1,55 @@
+<div style="display: none">
+	почему так странно сделано(я про appInputPointer, когда можно было выводить
+	просто в div)? потому что изначально я подумала, что нужно иметь возможность
+	конвертировать сумму из любой предоставленной валюты в остальные, поэтому
+	создала отдельный компонент app-input, но потом поняла, что это не так должно
+	работать.. но все еще казалось, что проще будет сделать так, как я собственно
+	и сделала, а не выводить все в div'ах.. не зря же компонент создала.. конец
+</div>
 <main>
 	<div class="container">
 		<div class="title">CurrencyConvert App</div>
 		<app-input
+			(valueChange)="onValueChange($event)"
+			class="inputFrom"
 			sign="₽"
 			countryFlag="fi fi-ru"
-			[value]="values['ruValue']"
-			(valueChange)="updateValues($event)"
 		></app-input>
 		<app-input
+			[value]="convertedAmountUSD"
+			appInputPointer
 			sign="$"
 			countryFlag="fi fi-us"
-			[value]="values['usValue']"
-			(valueChange)="updateValues($event)"
 		></app-input>
 		<app-input
+			[value]="convertedAmountEUR"
+			appInputPointer
+			sign="€"
+			countryFlag="fi fi-eu"
+		></app-input>
+		<app-input
+			[value]="convertedAmountCNY"
+			appInputPointer
 			sign="¥"
-			countryFlag="fi fi-jp"
-			[value]="values['jpValue']"
-			(valueChange)="updateValues($event)"
+			countryFlag="fi fi-cn"
 		></app-input>
 		<app-input
-			sign="₹"
-			countryFlag="fi fi-in"
-			[value]="values['inValue']"
-			(valueChange)="updateValues($event)"
-		></app-input>
-		<app-input
+			[value]="convertedAmountCHF"
+			appInputPointer
 			sign="₣"
 			countryFlag="fi fi-ch"
-			[value]="values['chValue']"
-			(valueChange)="updateValues($event)"
+		></app-input>
+		<app-input
+			[value]="convertedAmountAED"
+			appInputPointer
+			sign="د.إ"
+			countryFlag="fi fi-ae"
+		></app-input>
+		<app-input
+			[value]="convertedAmountNZD"
+			appInputPointer
+			sign="$"
+			countryFlag="fi fi-nz"
 		></app-input>
 	</div>
 </main>

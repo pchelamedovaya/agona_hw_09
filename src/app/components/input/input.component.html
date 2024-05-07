@@ -4,9 +4,8 @@
 		<div class="text">{{ sign }}</div>
 		<input
 			class="input"
-			type="number"
 			[ngModel]="value"
-			(ngModelChange)="updateOtherInputs($event)"
+			(ngModelChange)="onInputChange($event)"
 		/>
 	</div>
 </label>

@@ -11,7 +11,3 @@ export interface CurrencyInfo {
 export interface Rates {
 	[key: string]: CurrencyInfo
 }
-
-export interface Values {
-	[key: string]: number | undefined
-}

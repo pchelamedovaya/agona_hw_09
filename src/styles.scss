@@ -16,3 +16,12 @@
 	background-color: #ffffff50;
 	color: #4a607a;
 }
+
+.inputVisibilityDir {
+	&--auto {
+		pointer-events: auto;
+	}
+	&--none {
+		pointer-events: none;
+	}
+}

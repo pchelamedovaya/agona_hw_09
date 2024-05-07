@@ -19,8 +19,12 @@ main {
 .title {
 	display: flex;
 	justify-content: center;
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 	font-family: SemiboldFont, serif;
 	font-size: 26px;
 	color: #ffffff;
+}
+
+.inputFrom {
+	margin-bottom: 30px;
 }
